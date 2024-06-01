@@ -554,15 +554,162 @@ video {
   --tw-contain-style:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.hidden {
+  display: none;
+}
+
+.aspect-square {
+  aspect-ratio: 1 / 1;
+}
+
 .h-screen {
   height: 100vh;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-\[75\%\] {
+  width: 75%;
 }
 
 .w-full {
   width: 100%;
 }
 
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.bg-white\/15 {
+  background-color: rgb(255 255 255 / 0.15);
+}
+
+.bg-galaxy {
+  background-image: url(./images/galaxy.gif);
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.test {
+  background-color: red;
+  background-color: blue;
 }

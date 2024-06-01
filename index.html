@@ -7,31 +7,34 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="w-full h-screen bg-red-400">
+<body class="w-full grid h-screen bg-galaxy text-white">
 	<header>
-		<h1>Calculate a weight of an object on a planet</h1>
+		<h1 class="font-bold text-3xl tracking-tight text-center uppercase mb-6 mt-6">Calculate a weight of an object on a planet</h1>
 
-		<input type="text" id="mass" placeholder="Mass in Kilogram" />
-		<select class="select">
-			<option value='none'>--select planet--</option>
-		</select>
-		<button>Calculate weight</button>
-
-	</header>
-	<main>
-		<div class="flex-container">
-			<div class="flex-item image">
-				<img src='./images/earth.png' class="planet-image" />
-			</div>
-			<div class="flex-item description"></div>
-
+		<div class="w-full flex items-center justify-center gap-4">
+			<input type="text" id="mass" placeholder="Mass in Kilogram" class="text-black" />
+			<select class="select text-black">
+				<option value='' disabled selected>--select planet--</option>
+			</select>
+			<button>Calculate weight</button>
 		</div>
 
+	</header>
+	<main class="mt-11 my-8">
+		<div class="flex w-[75%] mx-auto py-10 bg-white/15 items-center justify-center">
+			<div id="img-container" class="flex items-center justify-center image w-1/2">
+				<img src='./images/earth.png' class="planet-image w-3/5" />
+			</div>
+			<div id="text-container" class="w-1/2 px-10 items-center hidden">
+				<div class="w-full bg-white/15 py-6 px-10 text-center text-2xl">
+					<div id="text" class=""></div>
+					<div id="weight" class="rounded-full w-fit bg-white/15 px-4 mt-3 mx-auto aspect-square hidden place-items-center">
 
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
-
-
-
 
 
 	<script src="./scripts/main.js"></script>
